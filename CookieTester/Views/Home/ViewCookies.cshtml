@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "View Cookies";
+}
+<h2>@ViewBag.Title.</h2>
+
+<ul>
+    @for (var i = 0; i < Request.Cookies.Count; i++)
+    {
+        <li>@Request.Cookies[i].Name : @HttpUtility.UrlDecode(Request.Cookies[i].Value)</li>
+    }
+</ul>
+
+Request.Cookies["foo"] : @HttpUtility.UrlDecode(Request.Cookies["foo"]?.Value)
+<br />
+Request.Cookies["bar"] : @HttpUtility.UrlDecode(Request.Cookies["bar"]?.Value)

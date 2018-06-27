@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<table>
+    <tr>
+        <td>Key</td>
+        <td>Value</td>
+        <td>Domain</td>
+        <td>Action</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="cookie-key" value="Key1" /></td>
+        <td><input type="text" id="cookie-value" value="Value1" /></td>
+        <td><input type="text" id="cookie-domain" /></td>
+        <td>
+            <button id="set-server-cookie">Set Server Cookie</button>
+            <button id="set-client-cookie">Set Client Cookie</button>
+        </td>
+    </tr>
+</table>
+
+
+<button id="custom-server-action-01">Custom Server Action 01</button>
+<button id="custom-client-action-01">Custom Client Action 01</button>
+
+<br />
+
+<button id="refresh-cookies">Refresh Cookies</button>
+<button id="delete-cookies-client">Delete All Cookies Client</button>
+<button id="delete-cookies-server">Delete All Cookies Server</button> <br />
+
+Current Cookies
+<table>
+    <tr>
+        <td>Client</td>
+        <td>Server</td>
+    </tr>
+    <tr>
+        <td><textarea cols="50" rows="10" id="current-client-cookies"></textarea></td>
+        <td><textarea cols="50" rows="10" id="current-server-cookies"></textarea></td>
+    </tr>
+</table>
+
+Server Foo:<input type="text" id="server-foo" />
+<br />
+Server Bar:<input type="text" id="server-bar" />
+
+
